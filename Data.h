@@ -7,10 +7,14 @@
 #include "Student.h"
 #include "Request.h"
 
-class Data{ //turma
+
+
+
+//gui
+class Data{
 private:
     set<Student> students_;
-    vector<Class> classes_;
+    vector<UCClass> classes_;
     queue<Request> requests_;
 
     void readFile(); //tem varios ifs e pergunta ao utilizador qual os ficheiros que queremos ler. consoante isso, chama diferentes funções

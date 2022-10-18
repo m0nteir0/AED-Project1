@@ -5,7 +5,7 @@
 #ifndef AED_PROJECT1_LECTURE_H
 #define AED_PROJECT1_LECTURE_H
 
-#include "Class.h"
+#include "UCClass.h"
 
 
 

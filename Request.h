@@ -6,12 +6,12 @@
 #define AED_PROJECT1_REQUEST_H
 
 #include "Student.h"
-#include "Class.h"
+#include "UCClass.h"
 
 class Request{
     Student student_;
-    Class class_og_;
-    Class class_final_;
+    UCClass class_og_;
+    UCClass class_final_;
 };
 
 #endif //AED_PROJECT1_REQUEST_H
