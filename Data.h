@@ -6,15 +6,14 @@
 #include <queue>
 #include "Student.h"
 #include "Request.h"
-
-
-
-
 //gui
+
+
+
 class Data{
 private:
     set<Student> students_;
-    vector<UCClass> classes_;
+    vector<UCClass> ucClasses_;
     queue<Request> requests_;
 
     void readFile(); //tem varios ifs e pergunta ao utilizador qual os ficheiros que queremos ler. consoante isso, chama diferentes funções
