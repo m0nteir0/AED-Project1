@@ -3,13 +3,23 @@
 
 #include <vector>
 #include <set>
+#include <queue>
 #include "Student.h"
+#include "Request.h"
 
 class Data{ //turma
 private:
     set<Student> students_;
     vector<Class> classes_;
-    queue<Pedido> pedidos_;
+    queue<Request> requests_;
+
+    void readFile(); //tem varios ifs e pergunta ao utilizador qual os ficheiros que queremos ler. consoante isso, chama diferentes funções
+    void readFile_classes();
+    void readFile_classes_per_uc();
+    void readFile_students_classes();
+
+    void guardarPedidos();
+    void processRequests();
 
 };
 
