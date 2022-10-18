@@ -8,4 +8,4 @@ include_directories(.)
 add_executable(AED_Project1
         UCClass.cpp
         UCClass.h
-        main.cpp)
+        main.cpp Request.cpp)

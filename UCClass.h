@@ -22,8 +22,8 @@ public:
     UCClass();
     UCClass(string ucCode, int classCode);
 
-    void set_ucCode(ucCode);
-    void set_classCode(classCode);
+    void set_ucCode(string ucCode);
+    void set_classCode(int classCode);
 
     string get_ucCode();
     int get_classCode();
