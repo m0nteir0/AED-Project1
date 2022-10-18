@@ -11,8 +11,8 @@
 
 class Lecture{ //aula
 private:
-    Class class_;
-    string UCCode_;
+    // Class class_;   -> a prof chamou a isto um slot?
+    // string UCCode_;
     string weekday_;
     float startHour_;
     float duration_;

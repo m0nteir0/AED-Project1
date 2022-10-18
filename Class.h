@@ -6,6 +6,7 @@
 #define AED_PROJECT1_CLASS_H
 
 #include <vector>
+#include <list>
 #include "Student.h"
 
 class Class{ //turma
@@ -14,6 +15,7 @@ private:
     int nStudents_;
     //int year_;
     vector<Student> students;
+    list<Lecture> timetable_;
 
 };
 
