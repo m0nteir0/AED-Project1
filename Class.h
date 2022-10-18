@@ -9,12 +9,13 @@
 #include <list>
 #include "Student.h"
 
-class Class{ //turma
+class UCClass{ //turma
 private:
+    string ucCode_;
     int classCode_;
-    int nStudents_;
+    //int nStudents_;
     //int year_;
-    vector<Student> students;
+    //vector<Student> students;
     list<Lecture> timetable_;
 
 };

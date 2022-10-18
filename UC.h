@@ -12,7 +12,7 @@
 class UC{
 private:
     string UCCode_;
-    vector<Class> classes_;
+    vector<Class> classes_;    // apagar esta class, not necessary: criar uma class UCTurma
 
 };
 
