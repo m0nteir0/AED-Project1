@@ -7,17 +7,26 @@
 
 #include <vector>
 #include <list>
+#include <iostream>
 #include "Student.h"
+
+using namespace std;
 
 class UCClass{ //turma
 private:
     string ucCode_;
     int classCode_;
-    //int nStudents_;
-    //int year_;
-    //vector<Student> students;
     list<Lecture> timetable_;
 
+public:
+    UCClass();
+    UCClass(string ucCode, int classCode);
+
+    void set_ucCode(ucCode);
+    void set_classCode(classCode);
+
+    string get_ucCode();
+    int get_classCode();
 };
 
 

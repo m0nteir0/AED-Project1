@@ -1,5 +1,14 @@
 #include <iostream>;
+#include "UCClass.h"
+
 using namespace std;
-bool ispair(int a){return (a%2==0);}//
-// Created by carol on 11/10/2022.
-//
+
+UCClass :: UCClass(){ucCode_ = "x"; classCode_ = 0;}
+UCClass :: UCClass(string ucCode, int classCode){ucCode_ = ucCode; classCode_=classCode;}
+
+void UCClass :: set_ucCode(ucCode){ucCode_ = ucCode;}
+void UCClass :: set_classCode(classCode){classCode_ = classCode;}
+
+string UCClass :: get_ucCode(){return ucCode_;}
+int UCClass :: get_classCode(){return classCode_;}
+
