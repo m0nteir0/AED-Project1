@@ -5,8 +5,9 @@
 #ifndef AED_PROJECT1_REQUEST_H
 #define AED_PROJECT1_REQUEST_H
 
-#include "Student.h"
 #include "UCClass.h"
+#include "Student.h"
+
 
 class Request{
 

@@ -6,6 +6,15 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(AED_Project1
+        main.cpp
         UCClass.cpp
         UCClass.h
-        main.cpp Request.cpp)
+        Request.cpp
+        Request.h
+        Lecture.cpp
+        Lecture.h
+        Student.cpp
+        Student.h
+        Data.cpp
+        Data.h
+        )
