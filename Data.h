@@ -17,10 +17,11 @@ class Data{
 private:
     set<Student> students_;
     vector<UCClass> ucClasses_;
-    queue<Request> requests_;
+    queue<Request> requests_; //como vai ser o request? pedidos únicos ou pode querer trocar várias aulas ao mm tempo
 
     void add_ucClasses(UCClass ucClass);
     void add_student(Student student);
+
 
 
     void readFile(); //tem varios ifs e pergunta ao utilizador qual os ficheiros que queremos ler. consoante isso, chama diferentes funções

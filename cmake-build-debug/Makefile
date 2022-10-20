@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\carol\AEDP1\AED-Project1
+CMAKE_SOURCE_DIR = C:\AED\Projeto1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\carol\AEDP1\AED-Project1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\AED\Projeto1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carol\AEDP1\AED-Project1\cmake-build-debug\CMakeFiles C:\Users\carol\AEDP1\AED-Project1\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\AED\Projeto1\cmake-build-debug\CMakeFiles C:\AED\Projeto1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carol\AEDP1\AED-Project1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\AED\Projeto1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,53 @@ AED_Project1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/build
 .PHONY : AED_Project1/fast
 
-Class.obj: Class.cpp.obj
-.PHONY : Class.obj
+Request.obj: Request.cpp.obj
+.PHONY : Request.obj
 
 # target to build an object file
-Class.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Class.cpp.obj
-.PHONY : Class.cpp.obj
+Request.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Request.cpp.obj
+.PHONY : Request.cpp.obj
 
-Class.i: Class.cpp.i
-.PHONY : Class.i
+Request.i: Request.cpp.i
+.PHONY : Request.i
 
 # target to preprocess a source file
-Class.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Class.cpp.i
-.PHONY : Class.cpp.i
+Request.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Request.cpp.i
+.PHONY : Request.cpp.i
 
-Class.s: Class.cpp.s
-.PHONY : Class.s
+Request.s: Request.cpp.s
+.PHONY : Request.s
 
 # target to generate assembly for a file
-Class.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Class.cpp.s
-.PHONY : Class.cpp.s
+Request.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Request.cpp.s
+.PHONY : Request.cpp.s
+
+UCClass.obj: UCClass.cpp.obj
+.PHONY : UCClass.obj
+
+# target to build an object file
+UCClass.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/UCClass.cpp.obj
+.PHONY : UCClass.cpp.obj
+
+UCClass.i: UCClass.cpp.i
+.PHONY : UCClass.i
+
+# target to preprocess a source file
+UCClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/UCClass.cpp.i
+.PHONY : UCClass.cpp.i
+
+UCClass.s: UCClass.cpp.s
+.PHONY : UCClass.s
+
+# target to generate assembly for a file
+UCClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/UCClass.cpp.s
+.PHONY : UCClass.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -185,9 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... AED_Project1
-	@echo ... Class.obj
-	@echo ... Class.i
-	@echo ... Class.s
+	@echo ... Request.obj
+	@echo ... Request.i
+	@echo ... Request.s
+	@echo ... UCClass.obj
+	@echo ... UCClass.i
+	@echo ... UCClass.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
