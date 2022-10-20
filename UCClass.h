@@ -15,18 +15,18 @@ using namespace std;
 class UCClass{ //turma
 private:
     string ucCode_;
-    int classCode_;
-    list<Lecture> timetable_;
+    string classCode_;
+    list<Lecture> timetable_; //uma turma de certa cadeira não tem um horário completo...
 
 public:
     UCClass();
-    UCClass(string ucCode, int classCode);
+    UCClass(string ucCode, string classCode);
 
     void set_ucCode(string ucCode);
-    void set_classCode(int classCode);
+    void set_classCode(string classCode);
 
     string get_ucCode();
-    int get_classCode();
+    string get_classCode();
 };
 
 
