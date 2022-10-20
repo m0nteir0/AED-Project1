@@ -84,10 +84,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/AED/Projeto1/Data.cpp">
+			<Option target="AED_Project1"/>
+		</Unit>
+		<Unit filename="C:/AED/Projeto1/Data.h">
+			<Option target="AED_Project1"/>
+		</Unit>
+		<Unit filename="C:/AED/Projeto1/Lecture.cpp">
+			<Option target="AED_Project1"/>
+		</Unit>
+		<Unit filename="C:/AED/Projeto1/Lecture.h">
+			<Option target="AED_Project1"/>
+		</Unit>
 		<Unit filename="C:/AED/Projeto1/Request.cpp">
 			<Option target="AED_Project1"/>
 		</Unit>
 		<Unit filename="C:/AED/Projeto1/Request.h">
+			<Option target="AED_Project1"/>
+		</Unit>
+		<Unit filename="C:/AED/Projeto1/Student.cpp">
+			<Option target="AED_Project1"/>
+		</Unit>
+		<Unit filename="C:/AED/Projeto1/Student.h">
 			<Option target="AED_Project1"/>
 		</Unit>
 		<Unit filename="C:/AED/Projeto1/UCClass.cpp">

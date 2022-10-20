@@ -39,3 +39,12 @@ int main()
         std::cout << entry.path() << std::endl;
 }
 */
+
+#6
+metodo sergio
+-função generica ler ficheiros
+    token
+    getline
+    guardar tokens num vetor de vetores
+-funções específicas para distribuir esses tipos de dados
+    mudar as variáveis

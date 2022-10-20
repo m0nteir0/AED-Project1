@@ -8,7 +8,9 @@
 #include <vector>
 #include <list>
 #include <iostream>
-#include "Student.h"
+#include "Lecture.h"
+//#include "Student.h" não posso fazer isto
+
 
 using namespace std;
 
@@ -16,17 +18,24 @@ class UCClass{ //turma
 private:
     string ucCode_;
     string classCode_;
-    list<Lecture> timetable_; //uma turma de certa cadeira não tem um horário completo...
+    list<Lecture> lectures_;
+    //lista de estudantes
 
 public:
+    //constructors
     UCClass();
     UCClass(string ucCode, string classCode);
 
+    //setters
     void set_ucCode(string ucCode);
     void set_classCode(string classCode);
 
+    void add_lecture(Lecture lecture);
+
+    //getters
     string get_ucCode();
     string get_classCode();
+    list<Lecture> get_lectures();
 };
 
 

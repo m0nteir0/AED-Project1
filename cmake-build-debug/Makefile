@@ -128,6 +128,54 @@ AED_Project1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/build
 .PHONY : AED_Project1/fast
 
+Data.obj: Data.cpp.obj
+.PHONY : Data.obj
+
+# target to build an object file
+Data.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Data.cpp.obj
+.PHONY : Data.cpp.obj
+
+Data.i: Data.cpp.i
+.PHONY : Data.i
+
+# target to preprocess a source file
+Data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Data.cpp.i
+.PHONY : Data.cpp.i
+
+Data.s: Data.cpp.s
+.PHONY : Data.s
+
+# target to generate assembly for a file
+Data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Data.cpp.s
+.PHONY : Data.cpp.s
+
+Lecture.obj: Lecture.cpp.obj
+.PHONY : Lecture.obj
+
+# target to build an object file
+Lecture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Lecture.cpp.obj
+.PHONY : Lecture.cpp.obj
+
+Lecture.i: Lecture.cpp.i
+.PHONY : Lecture.i
+
+# target to preprocess a source file
+Lecture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Lecture.cpp.i
+.PHONY : Lecture.cpp.i
+
+Lecture.s: Lecture.cpp.s
+.PHONY : Lecture.s
+
+# target to generate assembly for a file
+Lecture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Lecture.cpp.s
+.PHONY : Lecture.cpp.s
+
 Request.obj: Request.cpp.obj
 .PHONY : Request.obj
 
@@ -151,6 +199,30 @@ Request.s: Request.cpp.s
 Request.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Request.cpp.s
 .PHONY : Request.cpp.s
+
+Student.obj: Student.cpp.obj
+.PHONY : Student.obj
+
+# target to build an object file
+Student.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Student.cpp.obj
+.PHONY : Student.cpp.obj
+
+Student.i: Student.cpp.i
+.PHONY : Student.i
+
+# target to preprocess a source file
+Student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Student.cpp.i
+.PHONY : Student.cpp.i
+
+Student.s: Student.cpp.s
+.PHONY : Student.s
+
+# target to generate assembly for a file
+Student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AED_Project1.dir\build.make CMakeFiles/AED_Project1.dir/Student.cpp.s
+.PHONY : Student.cpp.s
 
 UCClass.obj: UCClass.cpp.obj
 .PHONY : UCClass.obj
@@ -209,9 +281,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... AED_Project1
+	@echo ... Data.obj
+	@echo ... Data.i
+	@echo ... Data.s
+	@echo ... Lecture.obj
+	@echo ... Lecture.i
+	@echo ... Lecture.s
 	@echo ... Request.obj
 	@echo ... Request.i
 	@echo ... Request.s
+	@echo ... Student.obj
+	@echo ... Student.i
+	@echo ... Student.s
 	@echo ... UCClass.obj
 	@echo ... UCClass.i
 	@echo ... UCClass.s

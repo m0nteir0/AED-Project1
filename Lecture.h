@@ -4,9 +4,9 @@
 
 #ifndef AED_PROJECT1_LECTURE_H
 #define AED_PROJECT1_LECTURE_H
-using namespace std;
 
-#include "UCClass.h"
+#include <string>
+using namespace std;
 
 
 

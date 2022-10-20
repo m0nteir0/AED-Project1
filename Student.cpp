@@ -1,4 +1,4 @@
-#include <iostream>;
+#include <iostream>
 #include <string>
 #include "Student.h"
 
@@ -9,6 +9,8 @@ Student :: Student(string studentName, int studentCode){studentName_ = studentNa
 
 void Student :: set_studentName(string studentName){studentName_ = studentName;}
 void Student :: set_studentCode(int studentCode){studentCode_ = studentCode;}
+
+void Student ::add_class(UCClass ucClass) {classes_.push_back(ucClass);}
 
 string Student :: get_studentName(){return studentName_;}
 int Student :: get_studentCode(){return studentCode_;}

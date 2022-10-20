@@ -1,4 +1,4 @@
-#include <iostream>;
+
 #include "UCClass.h"
 
 using namespace std;
@@ -9,6 +9,9 @@ UCClass :: UCClass(string ucCode, string classCode){ucCode_ = ucCode; classCode_
 void UCClass :: set_ucCode(string ucCode){ucCode_ = ucCode;}
 void UCClass :: set_classCode(string classCode){classCode_ = classCode;}
 
+void UCClass ::add_lecture(Lecture lecture) {lectures_.push_back(lecture);}
+
 string UCClass :: get_ucCode(){return ucCode_;}
 string UCClass :: get_classCode(){return classCode_;}
+list<Lecture> UCClass ::get_lectures() {return lectures_;}
 
