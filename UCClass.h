@@ -38,7 +38,7 @@ public:
     list<Lecture> get_lectures();
 
     //overloads
-    operator== (const UCClass& ucc);
+    bool operator== (const UCClass& ucc) const;
 };
 
 

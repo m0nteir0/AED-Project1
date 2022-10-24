@@ -9,7 +9,7 @@ A lista de lectures na UCClass não faz sentido existir, pelo menos da maneira c
 a classe implementada.
 
 
-#2
+#2 --DONE
 Temos que descobrir o método para comparar elementos no set.
 Até agora vi o set.find(value), mas parece que para isso temos de dar overload aos comparadores,
 para poderem comparar students.
