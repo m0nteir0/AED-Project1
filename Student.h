@@ -31,6 +31,9 @@ public:
     string get_studentName();
     int get_studentCode();
 
+    //overloads
+    operator<(const Student& stu);
+
     //methods
     //Student operator //operator override
 };

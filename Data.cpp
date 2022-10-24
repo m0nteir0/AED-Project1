@@ -133,6 +133,4 @@ void Data :: readFile_students_classes(string fname){
         }
     }
     else cout<<"Could not open the file\n";
-
-
 }

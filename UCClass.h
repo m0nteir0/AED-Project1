@@ -36,6 +36,9 @@ public:
     string get_ucCode();
     string get_classCode();
     list<Lecture> get_lectures();
+
+    //overloads
+    operator== (const UCClass& ucc);
 };
 
 
