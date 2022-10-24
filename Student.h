@@ -32,7 +32,7 @@ public:
     int get_studentCode();
 
     //overloads
-    operator<(const Student& stu);
+    bool operator<(const Student& stu) const;
 
     //methods
     //Student operator //operator override

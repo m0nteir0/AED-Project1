@@ -15,6 +15,6 @@ string UCClass :: get_ucCode(){return ucCode_;}
 string UCClass :: get_classCode(){return classCode_;}
 list<Lecture> UCClass ::get_lectures() {return lectures_;}
 
-UCClass :: operator==(const UCClass& ucc){
-    return (this->ucCode_ == ucc.ucCode_ && this->classCode_ == ucc.classCode_);
+bool UCClass :: operator==(const UCClass& ucc) const{
+    return (ucCode_ == ucc.ucCode_ && classCode_ == ucc.classCode_);
 }

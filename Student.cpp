@@ -15,6 +15,6 @@ void Student ::add_class(UCClass ucClass) {classes_.push_back(ucClass);}
 string Student :: get_studentName(){return studentName_;}
 int Student :: get_studentCode(){return studentCode_;}
 
-Student :: operator<(const Student& stu){
-    return (this->studentCode_ == stu.studentCode_);
+bool Student :: operator<(const Student& stu) const{
+    return (studentCode_ < stu.studentCode_);
 }
