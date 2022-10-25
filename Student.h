@@ -20,6 +20,7 @@ public:
     //constructors
     Student();
     Student(string studentName, int studentCode);
+    Student(const Student& student);
 
     //setters
     void set_studentName(string studentName);

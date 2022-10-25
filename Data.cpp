@@ -13,8 +13,9 @@ void Data :: add_ucClasses(UCClass ucClass){
 
 void Data :: add_student(Student student) {
     if (students_.find(student) != students_.end()) { //find parece não comparar students. Overload may be necessary
-        students_.insert(student);
+        new Student(student);
     }
+    students_.insert(student);
 }
 
 
@@ -126,9 +127,6 @@ void Data :: readFile_students_classes(string fname){
             if ( it != ucClasses_.end())
                 student.Student::add_class(*it);
             add_student(student);
-
-
-
 
         }
     }

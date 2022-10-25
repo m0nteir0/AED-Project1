@@ -1,5 +1,7 @@
-CMakeFiles/AED_Project1.dir/Request.cpp.obj: C:\AED\Projeto1\Request.cpp \
- C:\AED\Projeto1\Request.h C:\AED\Projeto1\UCClass.h \
+CMakeFiles/AED_Project1.dir/Request.cpp.obj: \
+ C:\Users\carol\AEDP1\AED-Project1\Request.cpp \
+ C:\Users\carol\AEDP1\AED-Project1\Request.h \
+ C:\Users\carol\AEDP1\AED-Project1\UCClass.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -142,4 +144,5 @@ CMakeFiles/AED_Project1.dir/Request.cpp.obj: C:\AED\Projeto1\Request.cpp \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- C:\AED\Projeto1\Lecture.h C:\AED\Projeto1\Student.h
+ C:\Users\carol\AEDP1\AED-Project1\Lecture.h \
+ C:\Users\carol\AEDP1\AED-Project1\Student.h
