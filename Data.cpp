@@ -18,7 +18,6 @@ void Data :: add_student(Student student) {
     students_.insert(student);
 }
 
-
 /*
 void Data :: readFile() {
     readFile_classes_per_uc();
@@ -88,10 +87,7 @@ void Data :: readFile_classes(string fname){
             Lecture lecture = Lecture(weekday,startHour,duration,type);
 
             auto it = find(ucClasses_.begin(), ucClasses_.end(), ucClass);
-            if ( it != ucClasses_.end())
-
-                it->add_lecture(lecture);
-
+            if ( it != ucClasses_.end()) it->add_lecture(lecture);
         }
     }
     else cout<<"Could not open the file\n";
@@ -118,6 +114,7 @@ void Data :: readFile_students_classes(string fname){
 
             studentCode = stoi(v[0]);
             studentName = v[1]; ucCode = v[2]; classCode = v[3];
+            v.clear();
 
             Student student = Student(studentName, studentCode);
 

@@ -13,10 +13,6 @@
 #include "Lecture.h"
 #include "Request.h"
 
-//gui
-
-
-
 class Data{
 private:
     set<Student> students_;
