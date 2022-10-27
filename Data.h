@@ -13,21 +13,23 @@
 #include "Lecture.h"
 #include "Request.h"
 
+using namespace std;
+
 class Data{
 private:
-    set<Student> students_;
-    vector<UCClass> ucClasses_;
-    queue<Request> requests_; //como vai ser o request? pedidos únicos ou pode querer trocar várias aulas ao mm tempo
+    set<Student*> students_;
+    vector<UCClass*> ucClasses_;
+    queue<Request*> requests_;//como vai ser o request? pedidos únicos ou pode querer trocar várias aulas ao mm tempo
 public:
 
     //getters
-    set<Student> get_students();
-    vector<UCClass> get_ucClasses();
-    queue<Request> get_requests();
+    set<Student*> get_students();
+    vector<UCClass*> get_ucClasses();
+    queue<Request*> get_requests();
 
 
     //auxiliary methods
-    void add_ucClasses(UCClass ucClass);
+    void add_ucClasses(UCClass* p);
     void add_student(Student student);
 
     //file reading methods

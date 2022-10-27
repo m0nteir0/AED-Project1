@@ -1,21 +1,12 @@
-//
-// Created by Guilherme Monteiro on 18/10/2022.
-//
+
 #include "Data.h"
 
-set<Student> Data :: get_students(){return students_;}
-vector<UCClass> Data :: get_ucClasses(){return ucClasses_;}
-queue<Request> Data :: get_requests(){return requests_;}
+set<Student*> Data :: get_students(){return students_;}
+vector<UCClass*> Data :: get_ucClasses(){return ucClasses_;}
+queue<Request*> Data :: get_requests(){return requests_;}
 
-void Data :: add_ucClasses(UCClass ucClass){
-    ucClasses_.push_back(ucClass);
-}
-
-void Data :: add_student(Student student) {
-    if (students_.find(student) != students_.end()) { //find parece não comparar students. Overload may be necessary
-        new Student(student);
-    }
-    students_.insert(student);
+void Data :: add_ucClasses(UCClass* p){
+    ucClasses_.push_back(p);
 }
 
 /*
@@ -52,7 +43,8 @@ void Data :: readFile_classes_per_uc(string fname) {
             //create UCClass w/ the data and add it to the vector
             //vector is sorted, due to the way csv is arranjed.
             UCClass uc = UCClass(ucCode, classCode);
-            add_ucClasses(uc);
+            UCClass *uc_p = &uc;
+            add_ucClasses(uc_p);
         }
     }
     else cout<<"Could not open the file\n";
@@ -120,11 +112,13 @@ void Data :: readFile_students_classes(string fname){
 
             UCClass ucClass = UCClass(ucCode, classCode);
 
-            auto it = find(ucClasses_.begin(), ucClasses_.end(), ucClass);
-            if ( it != ucClasses_.end())
-                student.Student::add_class(*it);
-            add_student(student);
+            /* if (student.get_classes().empty()) student.add_class(ucClass);
 
+            auto it = find(student.get_classes().begin(), student.get_classes().end(), ucClass);
+            if ( it != student.get_classes().end()){
+                student.add_class(ucClass);}*/
+            student.add_class(ucClass);
+            students_.insert(student);
         }
     }
     else cout<<"Could not open the file\n";

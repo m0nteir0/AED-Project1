@@ -14,12 +14,13 @@ class Student{
 private:
     string studentName_;
     int studentCode_;
-    list<UCClass> classes_;
+    vector<UCClass> classes_;
 
 public:
     //constructors
     Student();
     Student(string studentName, int studentCode);
+    // Student(string studentName, int studentCode, list<UCClass> turma);
     Student(const Student& student);
 
     //setters
@@ -31,6 +32,7 @@ public:
     //getters
     string get_studentName();
     int get_studentCode();
+    vector <UCClass> get_classes();
 
     //overloads
     bool operator<(const Student& stu) const;
